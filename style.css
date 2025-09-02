@@ -13,20 +13,29 @@
 
 @font-face {
   font-family: "Consolas";
-  src: url(./fonts/CONSOLA.TTF);
+  src: url(./assets/fonts/CONSOLA.TTF);
 }
 
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
   height: 100vh;
+}
+
+#main {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 #bsod-page {
   background-color: var(--bsod-blue);
   color: white;
-  font-family: "Consolas";
+  font-family: "Consolas", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
