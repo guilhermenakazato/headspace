@@ -2,8 +2,41 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bsod-blue: #0827F5;
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url(./fonts/CONSOLA.TTF);
+}
+
 body {
   background-color: white;
   color: black;
   font-family: Verdana;
+  height: 100vh;
+}
+
+#bsod-page {
+  background-color: var(--bsod-blue);
+  color: white;
+  font-family: "Consolas";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bsod-page p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#bsod-page a {
+  color: yellow;
 }
